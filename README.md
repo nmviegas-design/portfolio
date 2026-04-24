@@ -83,3 +83,4 @@ The bottom-right "Tweaks" pill opens a panel for live changes to:
 - **Theme** (light / dark)
 
 Settings persist to `localStorage` under `nuno-tweaks-v1`.
+
