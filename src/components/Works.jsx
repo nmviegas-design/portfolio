@@ -57,6 +57,7 @@ function WorkThumb({ swatch, title }) {
 }
 
 export default function Works() {
+  const total = String(WORKS.length).padStart(2, '0');
   return (
     <section id="work" className="section wrap" data-screen-label="Selected Works">
       <SectionHead
@@ -67,7 +68,7 @@ export default function Works() {
       <div className="works">
         {WORKS.map((w) => (
           <Link key={w.num} className="work" to={`/${w.slug}`}>
-            <div className="work__num">{w.num} <span style={{ color: 'var(--ink-3)' }}>/ 08</span></div>
+            <div className="work__num">{w.num} <span style={{ color: 'var(--ink-3)' }}>/ {total}</span></div>
             <div className="work__title-wrap">
               <h3 className="work__title">
                 {w.title}
