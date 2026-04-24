@@ -12,9 +12,7 @@ const OTHER = {
   taskize:   { slug: 'taskize',   num: '03', label: 'Taskize',            sub: 'a Euroclear company' },
   mytr:      { slug: 'mytr',      num: '04', label: 'My Thomson Reuters', sub: 'Account Management' },
   vodafone:  { slug: 'vodafone',  num: '05', label: 'Vodafone Business',  sub: '3000% lead increase' },
-  bt:        { slug: 'bt',        num: '06', label: 'British Telecom',    sub: 'Conversion & drop-off' },
   wasalt:    { slug: 'wasalt',    num: '07', label: 'Wasalt & Quara',     sub: 'Real estate · Finance · KSA' },
-  axa:       { slug: 'axa',       num: '08', label: 'AXA Digital',        sub: 'Enterprise AI knowledge' },
 };
 
 export const PROJECTS = {
@@ -467,64 +465,7 @@ export const PROJECTS = {
       <><strong>Scalable design system</strong> handed off to product teams for reuse across the estate.</>,
       <><strong>Personas, journeys, IA</strong> adopted as the common language across brand, product and sales.</>,
     ],
-    others: [OTHER.bt, OTHER.taskize, OTHER.santander],
-  },
-
-  // ============ BT ============
-  bt: {
-    slug: 'bt',
-    breadcrumb: 'British Telecom',
-    name: <>British<span style={SUB}> / Telecom</span></>,
-    year: '2011 — 2012',
-    tags: ['UX', 'IA', 'CRO', 'Accessibility'],
-    swatch: 'oklch(0.42 0.15 280)',
-    tagline: <>Led UX and information architecture across BT&rsquo;s consumer estate — improving the product purchase flow by <strong>+12% conversion</strong> and reducing drop-off on key pages by <strong>40%</strong>, plus a full redesign of My BT and the parental-control tools.</>,
-    overview: [
-      { label: 'Client', items: ['British Telecom (BT)', 'Consumer products', 'Internal support platforms'] },
-      { label: 'Role', items: ['User Experience & IA', 'Flow redesign lead', 'Parental-controls UX overhaul'] },
-      { label: 'Scope', items: ['Product purchase flow', 'My BT account app', 'Internal support tools', 'Accessibility improvements'] },
-      { label: 'Stakes', items: ['Multi-million-£ product revenue', 'Hundreds of thousands of users', 'Parental tool compliance'] },
-    ],
-    metrics: [
-      { v: <>+<em>12%</em></>, k: 'conversion uplift on product purchase flow' },
-      { v: <>−<em>40%</em></>, k: 'drop-off on key checkout pages' },
-      { v: <><em>A11y</em></>, k: 'parental controls rebuilt for accessibility' },
-      { v: <><em>1st</em></>, k: 'role where IA became the unlock' },
-    ],
-    chapters: [
-      {
-        kicker: 'Context',
-        title: <>Complex journeys, <em>real</em> money.</>,
-        paragraphs: [
-          <>BT&rsquo;s product purchase flow carried enormous commercial weight — any friction translated directly into lost revenue. The flow had grown organically over years; every edge case had been patched rather than designed.</>,
-        ],
-      },
-      {
-        kicker: 'Rework',
-        title: <>Simplify the <em>spine.</em></>,
-        paragraphs: [
-          <>I rebuilt the IA around user goals, removed duplicate steps, and rationalised the fork logic. The result was a flow that felt shorter even though the logical steps were identical — because every screen did one job.</>,
-        ],
-        visual: { layout: 'two', items: [
-          { caption: 'Flow diff · before & after' },
-          { caption: 'My BT redesign', accent: 'oklch(0.66 0.18 20)' },
-        ]},
-      },
-      {
-        kicker: 'Parental controls',
-        title: <>Accessibility is <em>not</em> optional.</>,
-        paragraphs: [
-          <>The parental-control tools served families — including users with a wide range of abilities. I led a full UX overhaul with accessibility as a first-class constraint, not a compliance afterthought.</>,
-        ],
-      },
-    ],
-    results: [
-      <><strong>+12% conversion</strong> on the product purchase flow.</>,
-      <><strong>−40% drop-off</strong> on the flow&rsquo;s most-bailed pages.</>,
-      <><strong>My BT redesigned</strong> along with internal support platforms serving the same user base.</>,
-      <><strong>Parental-control UX</strong> overhauled with accessibility at the centre.</>,
-    ],
-    others: [OTHER.vodafone, OTHER.taskize, OTHER.santander],
+    others: [OTHER.taskize, OTHER.santander, OTHER.lloyds],
   },
 
   // ============ WASALT / QUARA ============
@@ -589,52 +530,6 @@ export const PROJECTS = {
     others: [OTHER.taskize, OTHER.santander, OTHER.mytr],
   },
 
-  // ============ AXA ============
-  axa: {
-    slug: 'axa',
-    breadcrumb: 'AXA Digital',
-    name: <>AXA<span style={SUB}> / Digital</span></>,
-    year: '2026 — Current',
-    tags: ['AI', 'Enterprise', 'Lead Product Design', 'Global'],
-    swatch: 'oklch(0.4 0.14 250)',
-    tagline: <>Conceiving and delivering an <strong>enterprise AI-driven knowledge platform</strong> for <strong>150,000 professional users</strong> across AXA&rsquo;s global operations — leading end-to-end design, research, ideation, prototyping and delivery in a fast cross-functional environment.</>,
-    overview: [
-      { label: 'Client', items: ['AXA Digital Group Solutions', 'Global insurance group', 'Lisbon hybrid'] },
-      { label: 'Role', items: ['Lead Product Designer', 'End-to-end ownership', 'Cross-functional partnership'] },
-      { label: 'Scope', items: ['AI knowledge platform', '150,000 professional users', 'Global operations'] },
-      { label: 'Phase', items: ['Conception → delivery', 'Live engagement', 'Confidential detail — outline only'] },
-    ],
-    metrics: [
-      { v: <><em>150k</em></>, k: 'professional users across AXA global' },
-      { v: <><em>AI</em></>, k: 'knowledge platform — new product category' },
-      { v: <><em>E2E</em></>, k: 'end-to-end design ownership' },
-      { v: <><em>1</em></>, k: 'Lead Product Designer on the initiative' },
-    ],
-    chapters: [
-      {
-        kicker: 'Context',
-        title: <>An <em>AI</em> product at insurance scale.</>,
-        paragraphs: [
-          <>AXA set out to build an enterprise AI-driven knowledge platform for 150,000 professional users across its global operations — a product category that doesn&rsquo;t have a settled playbook yet, at a scale that leaves no margin for speculation.</>,
-          <>I&rsquo;m leading end-to-end design, research, ideation, prototyping and delivery — partnering closely with product, engineering and domain experts to translate AI capability into interfaces professionals trust.</>,
-        ],
-      },
-      {
-        kicker: 'How',
-        title: <>Shape, test, <em>ship.</em></>,
-        paragraphs: [
-          <>Because the solution space is new, we lean hard on continuous discovery: rapid prototypes, weekly user contact, and tight feedback loops that let us invalidate assumptions before they become tech debt.</>,
-          <>Details of the product are confidential — but the working posture is the same one that produced measurable results at Taskize, Santander and Refinitiv: own the craft, share the thinking, ship on rhythm.</>,
-        ],
-      },
-    ],
-    results: [
-      <><strong>Live engagement</strong> — outcomes to be published as the product reaches milestones.</>,
-      <><strong>End-to-end ownership</strong> from conception to delivery of a new AI product line at enterprise scale.</>,
-      <><strong>Cross-functional posture</strong> — embedded with product, engineering and domain experts across time zones.</>,
-    ],
-    others: [OTHER.taskize, OTHER.santander, OTHER.mytr],
-  },
 };
 
 export const PROJECT_SLUGS = Object.keys(PROJECTS);
